@@ -1,10 +1,10 @@
 function divisibility(range) {
     const ans = [];
        for (var i = 1;i <= range; i++){
-           if (i % 2 === 0 && i % 3 === 0){
+           if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+            ans.push('yu-gi-oh');
+            } else if (i % 2 === 0 && i % 3 === 0){
                ans.push('yu-gi');
-           } else if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
-               ans.push('yu-gi-oh');
            } else if (i % 2 === 0 && i % 5 === 0){
                ans.push('yu-oh');
            } else if (i % 3 === 0 && i % 5 === 0){
